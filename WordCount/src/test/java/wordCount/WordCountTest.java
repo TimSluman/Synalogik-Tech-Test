@@ -66,6 +66,30 @@ public class WordCountTest
 					        put(3, 1);
 					        put(4, 1);
 					        put(5, 1);
+					    }})),
+				Arguments.of("(this) should be 4 letters long",new FileData()
+						.setHighestValue(2)
+						.setLongestKey(Arrays.asList(4))
+						.setWordCount(6)
+						.setWordCountAverage(4.0f)
+						.setLengthMap(new HashMap<Integer,Integer>(){{
+					        put(1, 1);
+					        put(2, 1);
+					        put(4, 2);
+					        put(6, 1);
+					        put(7, 1);
+					    }})),
+				Arguments.of("[this] should be 4 letters long",new FileData()
+						.setHighestValue(2)
+						.setLongestKey(Arrays.asList(4))
+						.setWordCount(6)
+						.setWordCountAverage(4.0f)
+						.setLengthMap(new HashMap<Integer,Integer>(){{
+					        put(1, 1);
+					        put(2, 1);
+					        put(4, 2);
+					        put(6, 1);
+					        put(7, 1);
 					    }})));
 				
 	}

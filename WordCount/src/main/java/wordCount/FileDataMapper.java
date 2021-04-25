@@ -35,7 +35,7 @@ public final class FileDataMapper
 		List<String> formattedWords = words.stream()
 				.parallel()
 				.filter(word -> word.matches("^.*[a-zA-Z0-9&].*$"))
-				.map(word -> word.replaceAll("[\"!?<>:;,.\\n]", ""))
+				.map(word -> word.replaceAll("[{}()\\[\\]\"!?<>:;,.\\n]", ""))
 				.collect(Collectors.toList());
 		
 		
