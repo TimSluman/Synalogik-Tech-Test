@@ -9,5 +9,5 @@ Ive included what i define a word in this program in the comments but ill also c
 	 *  This does unfortunately mean that languages that do not use A-Z are not going to work with this program. 
 	 *  But given the specification I deemed that not necessary and they could be added later if that was deemed important.
 	 *  
-	 *  For word length I'm also extracting out certain punctuation ("!?<>:;,.) and line endings.
+	 *  For word length I'm also extracting out certain punctuation ("{}[]()!?<>:;,.) and line endings.
 	 */
